@@ -13,7 +13,7 @@ const url = process.env.NODE_ENV ==='development'?'http://localhost:5000':'http:
     console.log('res.data', res.data);
     setResponse(res.data.express)
   });
-axios.get('localhost:5000/api/hello').then(res=>console.log('hi,', res))
+// axios.get('localhost:5000/api/hello').then(res=>console.log('hi,', res))
 }, [])
   return (
     <div className="App">

@@ -17,8 +17,9 @@ app.post('/api/world',(req,res)=>{
   console.log(req.body)
   res.send(`I received your POST request, this is what you sent ${req.body.post}`)
 })
-app.get("/", (req, res) => {
-  res.send({ message: "We did it!" });
-});
+// app.get("/", (req, res) => {
+//   res.send({ message: "We did it :)" });
+// });
+
 // app.listen(port,()=>console.log('Listening on port...', port))
 app.listen(port, () => console.log("Backend server live on " + port));
