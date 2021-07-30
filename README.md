@@ -1,2 +1,1 @@
-# react-app-server
-# react-app-server
+# buddies-server
