@@ -5,13 +5,13 @@
 		"client": "cd client && yarn start",
 		"server": "nodemon server.js",
 		"dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-		"start": "node server.js",
-		"heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
 	},
 	"dependencies": {
 		"body-parser": "^1.18.3",
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
+		"firebase": "^8.8.1",
+		"firebase-tools": "^9.16.0",
 		"nodemon": "^2.0.12"
 	},
 	"devDependencies": {
