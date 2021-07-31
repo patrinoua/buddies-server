@@ -2,6 +2,9 @@
 
 ## TODO
 
+### implement CI
+
+
 ### make it refresh every 30 mins!
 
 https://geshan.com.np/blog/2021/01/free-nodejs-hosting/
