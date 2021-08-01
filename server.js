@@ -1,29 +1,35 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+// ******* ******* ******* ******* ******* *******
 
-const app = express()
-const port = process.env.PORT || 5000
-const cors = require('cors')
-const server = require('./server/interests')
+// WE ARE USING THE FUNCTIONS INSTEAD - GO THERE
+// BUT MAYBE IN THE FUTURE WE WANNA ADD EXPRESS ON FIREBASE
+// ******* ******* ******* ******* ******* *******
 
-app.use(cors())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+// const express = require('express')
+// const bodyParser = require('body-parser')
 
-app.get('/api/hello', (req, res) => {
-	res.send({ express: 'Hello from express' })
-})
+// const app = express()
+// const port = process.env.PORT || 5000
+// const cors = require('cors')
+// const server = require('./server/interests')
 
-app.post('/api/world', (req, res) => {
-	console.log(req.body.express)
-	res.send(
-		`I received your POST request, this is what you sent ${req.body.post}`,
-	)
-})
-app.get('/api/interests', function (req, res) {
-	console.log('interests...', server.interests())
-	res.send({ interests: server.interests() })
-})
+// app.use(cors())
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: true }))
+
+// app.get('/api/hello', (req, res) => {
+// 	res.send({ express: 'Hello from express' })
+// })
+
+// app.post('/api/world', (req, res) => {
+// 	console.log(req.body.express)
+// 	res.send(
+// 		`I received your POST request, this is what you sent ${req.body.post}`,
+// 	)
+// })
+// app.get('/api/interests', function (req, res) {
+// 	console.log('interests...', server.interests())
+// 	res.send({ interests: server.interests() })
+// })
 
 // if (process.env.NODE_ENV === 'production') {
 // 	// Serve any static files
@@ -35,9 +41,9 @@ app.get('/api/interests', function (req, res) {
 // 	})
 // }
 
-app.get('/', function (req, res) {
-	res.sendStatus(200)
-})
+// app.get('/', function (req, res) {
+// 	res.sendStatus(200)
+// })
 
-// app.listen(port,()=>console.log('Listening on port...', port))
-app.listen(port, () => console.log('Backend server live on ' + port))
+// // app.listen(port,()=>console.log('Listening on port...', port))
+// app.listen(port, () => console.log('Backend server live on ' + port))
