@@ -1,9 +1,23 @@
 # buddies-server
+to start: 
+yarn dev
+
+### start the emulator
+```
+npx firebase emulators:start --only functions
+```
+### Deploy to firebase
+```
+npx firebase deploy
+```
 
 ## TODO
 
 ### implement CI
 
+
+
+## TODO
 
 ### make it refresh every 30 mins!
 
