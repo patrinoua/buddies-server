@@ -12,6 +12,7 @@ module.exports = {
 			biking: '🚵🏻‍♀️ Biking',
 			yoga: '🧘🏽‍♂️ Yoga',
 			ping_pong: '🏓 Ping pong',
+			photography: '📷 Photography',
 			drinks: '🥂 Grab drinks',
 		}
 	})(),
