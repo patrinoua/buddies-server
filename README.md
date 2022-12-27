@@ -2,6 +2,10 @@
 to start: 
 yarn dev
 
+## Interests 
+buddies-server
+https://us-central1-buddies-server.cloudfunctions.net/interests
+
 ### start the emulator
 ```
 npx firebase emulators:start --only functions
